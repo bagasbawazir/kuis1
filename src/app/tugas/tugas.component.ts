@@ -30,6 +30,8 @@ export class TugasComponent implements OnInit {
   }
   onReset(){
     this.username='';
+  //tambahan bagas
   }
 }
+
 
