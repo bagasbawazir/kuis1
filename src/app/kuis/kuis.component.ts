@@ -9,7 +9,7 @@ import { Mahasiswa } from '../sharedkuis/mahasiswa';
 export class KuisComponent implements OnInit {
   nim = '';
   nama = '';
-  alamat = '';
+  kelas = '';
   daftarMhs: Mahasiswa[] = [];
   mhs;
 
@@ -19,11 +19,11 @@ export class KuisComponent implements OnInit {
   }
   
   tambahMhs(){
-    this.mhs = new Mahasiswa(this.nim, this.nama, this.alamat);
+    this.mhs = new Mahasiswa(this.nim, this.nama, this.kelas);
     this.daftarMhs.push(this.mhs);
     this.nim = '';
     this.nama = '';
-    this.alamat = '';
+    this.kelas = '';
   }
 
 }
