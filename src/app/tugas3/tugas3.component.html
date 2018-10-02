@@ -1,0 +1,10 @@
+<button
+ class="btn btn-primary"
+ (click)="onCreationStatus()">Tampilkan Detail</button>
+ <!-- <p>{{ serverCreationStatus }}</p>  -->
+ <p *ngIf ="i%2 !== 0">{{serverCreationStatus}}</p>
+ <p *ngFor ="let i of log"
+    [ngStyle]="{backgroundColor: i>=5 ? 'blue' : 'transparant'}"
+    [ngClass]="{'lanjut' : i>=5}">
+{{i}}
+</p>

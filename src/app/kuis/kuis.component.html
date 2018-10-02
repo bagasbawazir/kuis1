@@ -1,0 +1,65 @@
+<!-- <p>
+  kuis works!
+</p> --> 
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href=".../node_modules/angular/bootstrap/dist/css/bootstrap.css"></a>
+      <a class="navbar-brand" href="">Navbar</a>
+      <a class="navbar-brand" href="">Home</a>
+      <a href="#">Master Data</a>
+    </div>
+    
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Form Mahasiswa</h1>
+</div>
+<div class="col-md-6">
+    <h1>Data Mahasiswa</h1>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+        <label for="nim">NIM</label>
+      <input type="text" name="nim" id="nim" class="form-control" [(ngModel)]="nim">
+      <label for="nim">Nama</label>
+      <input type="text" name="nama" id="nama" class="form-control" [(ngModel)]="nama">
+      <label for="nim">Alamat</label>
+      <textarea name="alamat" id="alamat" cols="10" rows="5" class="form-control" [(ngModel)]="alamat"></textarea>
+      <br>
+      <button class="btn btn-primary" (click)="tambahMhs()">Tambah Mahasiswa</button>
+    </div>
+ 
+          <div class="col-md-6">
+              <div class="card" *ngFor="let mhs of daftarMhs">
+                  <div class="card-header">
+                <h3> {{ mhs.nama }} </h3>
+                </div>
+                    <div class="card-body">
+                <h4 > {{ mhs.nim }} </h4>
+                <h3 > {{ mhs.alamat }} </h3>
+              </div>
+    </div>
+    </div>
+    </div>
+
+ 
+
+
+
+
